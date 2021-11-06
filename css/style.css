@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    margin-top: 48px;
+
+    
+    overflow-x: hidden;
+    
+    background-color: rgb(247, 247, 247);
+    background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)),  url(../assets/img/background.jpg);
+    background-size: 25%;
+}
+
+.content {
+    width: 100vw;
+    height: 180vh;
+}
+
+.separador {
+    width: 100%;
+    height: 32px;
+
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+
+    background-color: rgb(255, 210, 61);
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Enlaces */
+
+a:link {
+    background-color: transparent;
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: transparent;
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: transparent;
+    
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+}
+
+
+/* NavBar */
+
+.navbar-grid {
+    z-index: 1;
+
+    background-color: rgb(37, 26, 194);
+    
+    margin: 0;
+    
+    height: 48px;
+    width: 100%;
+    
+    overflow: hidden;
+    position: fixed;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    top: 0;
+    
+}
+
+.logo{
+    grid-column: 2;
+    grid-row: 1;
+    
+    margin-left: 0;
+}
+
+.navbar-link1 {
+    grid-row: 1;
+    grid-column: 4;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-left: 0;
+    margin-top: 11px;
+}
+
+.navbar-link2 {
+    grid-row: 1;
+    grid-column: 5;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-left: 0;
+    margin-top: 11px;
+}
+
+.navbar-link3 {
+    grid-row: 1;
+    grid-column: 6;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-left: 0;
+    margin-top: 11px;
+}
+
+
+/* Hero */
+
+.hero {
+    width: 100vw;
+    height: 88vh;
+    
+    position: relative;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/salacine.jpg);
+    background-size: cover;
+
+    
+}
+
+.hero-content {
+    width: 680px;
+    height: 300px;
+    
+    margin-bottom: -150px;
+    
+    position: absolute;
+    left: 224px;
+    bottom: 60%;
+}
+
+.hero-title {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+
+    color: white;
+}
+
+.hero-text {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.hero-button-showings {
+    background-color: #f0ff22;
+    
+    margin-top: 32px;
+    margin-left: 0;
+    margin-right: 20px;
+    
+    width: 208px;
+    height: 41px;
+    
+    border-style: none;
+    border-radius: 5px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+
+    cursor: pointer;
+}
+
+.hero-button-showings > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+}
+
+
+/* Productos */
+
+.productos-seccion {
+    margin: 0;
+    padding-left: 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.producto-container {
+    margin: 0;
+    padding-bottom: 64px;
+    
+    display: flex;
+    flex: 0 0 33.333%;
+    order: 3;
+
+    align-items: center;
+}
+
+.producto {
+    height: 320px;
+    width: 256px;
+
+    margin: 0 auto;
+
+    background-color: rgba(185, 185, 185, 0.637);
+
+    border-radius: 5px;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 1fr;
+}
+
+.producto-img {
+    grid-column: 1;
+    grid-row: 1;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    
+    width: 90%;
+    height: 80px;
+
+    cursor: url("../assets/img/eyestars.png"), auto;
+}
+
+.producto-texto {
+    grid-column: 1;
+    grid-row: 2;
+
+    margin: 0  24px;
+    padding: 16px 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.producto-texto > button {
+    background-color: #fffb00;
+    
+    width: 120px;
+    height: 40px;
+    
+    border-style: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.producto-banner {
+    grid-column: 1;
+    grid-row: 3;
+    
+    align-content: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 0;
+
+    cursor: url("../assets/img/eyestars.png"), auto;
+    
+    background-color: rgb(37, 26, 194);
+    
+    border-style: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Promociones */
+
+.promo-seccion {
+    margin: 0;
+    padding-left: 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.promo-container {
+    margin: 0;
+    padding-bottom: 64px;
+    
+    display: flex;
+    flex: 0 0 33.333%;
+    order: 3;
+
+    align-items: center;
+}
+
+.promo {
+    height: 392px;
+    width: 256px;
+
+    margin: 0 auto;
+
+    background-color: rgba(185, 185, 185, 0.637);
+
+    border-radius: 5px;
+
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 1fr;
+}
+
+.promo-img {
+    grid-column: 1;
+    grid-row: 1;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+
+    width: 80%;
+    height: 120px;
+
+    cursor: url("../assets/img/popcorn-emoji.png"), auto;
+}
+
+.promo-texto {
+    grid-column: 1;
+    grid-row: 2;
+
+    margin: 0  24px;
+    padding: 16px 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.promo-texto > button {
+    background-color: #fffb00;
+    
+    width: 120px;
+    height: 40px;
+    
+    border-style: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.promo-banner {
+    grid-column: 1;
+    grid-row: 3;
+    
+    align-content: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    
+    background-color: rgb(233, 0, 0);
+    
+    cursor: url("../assets/img/popcorn-emoji.png"), auto;
+    
+    border-style: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Footer */
+
+.footer-container {
+    margin: 0 auto;
+
+    background: #222222;
+
+    bottom: 0;
+}
+
+.footer-texto {
+    padding: 2px 16px 16px 16px;
+
+    color: rgb(253, 236, 0);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-a:link {
+    background-color: transparent;
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer-a:visited {
+    background-color: transparent;
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer-a:hover {
+    background-color: transparent;
+    
+    color: rgb(0, 238, 255);
+    text-decoration: underline;
+}
